@@ -75,6 +75,12 @@ namespace Wkhtmltopdf.NetCore
         public bool IsGrayScale { get; set; }
 
         /// <summary>
+        /// Use the specified width even if it is not large enough for the content
+        /// </summary>
+        [OptionFlag("--disable-smart-width")]
+        public bool DisableSmartShrinking { get; set; }
+
+        /// <summary>
         /// Path to header HTML file.
         /// </summary>
         [OptionFlag("--header-html")]
